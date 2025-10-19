@@ -2,4 +2,148 @@
 \label{cap2}
 
 \section{Caracterização dos Autores}
+A aplicação destina-se a dois tipos principais de utilizadores: Cinéfilos e Administradores. Estes atores têm perfis distintos, tanto nas suas motivações como nas suas interações com o sistema.
+
+\subsection{Cinéfilo}
+\textbf{Descrição geral:}
+O cinéfilo é o utilizador comum da aplicação, interessado em filmes e no contacto com uma comunidade que partilha os mesmos gostos. O seu principal objetivo é procurar informações sobre filmes e partilhar opiniões através de comentários.
+
+\textbf{Perfil demográfico:}
+\begin{itemize}
+\item Idade: entre 16 e 60 anos.
+\item Género: indiferente.
+\item Localização: utilizadores urbanos e suburbanos, com acesso regular à internet.
+\end{itemize}
+\newpage
+\textbf{Características físicas:}
+\begin{itemize}
+\item Sem necessidades especiais específicas, embora a aplicação deva ser acessível a pessoas com visão reduzida (por exemplo, contraste adequado e tamanho de letra ajustável), seguindo as recomendações das normas de acessibilidade WCAG (Web Content Accessibility Guidelines).
+\end{itemize}
+\textbf{Perfil social:}
+\begin{itemize}
+\item Interesse elevado em cinema e cultura audiovisual.
+\item Gosta de interagir com outros utilizadores e de expressar a sua opinião sobre filmes.
+\item Pode seguir tendências de redes sociais e estar atento a novos lançamentos cinematográficos.
+\end{itemize}
+\textbf{Literacia digital:}
+\begin{itemize}
+\item Média a elevada.
+\item Familiarizado com aplicações móveis e sites de streaming ou redes sociais.
+\item Capaz de realizar pesquisas, escrever comentários e navegar em interfaces digitais intuitivas.
+\end{itemize}
+\textbf{Objetivos principais no sistema:}
+\begin{itemize}
+\item Pesquisar filmes por título, género ou ano.
+\item Ler informações e sinopses de filmes.
+\item Escrever e ler comentários sobre filmes.
+\end{itemize}   
+\newpage
+\subsection{Administrador}
+\textbf{Descrição geral:}
+O administrador é o responsável pela manutenção do conteúdo e pela moderação da aplicação. É quem gere a base de dados de filmes e controla a qualidade dos comentários submetidos pelos cinéfilos.
+
+\textbf{Perfil demográfico:}
+\begin{itemize}
+    \item Idade: entre 25 e 50 anos.
+    \item Género: indiferente.
+    \item Localização: normalmente ligado à equipa de gestão da aplicação ou ao serviço técnico.
+    \end{itemize}
+\textbf{Características físicas:}
+\begin{itemize}
+\item Sem restrições relevantes, podendo executar todas as tarefas num ambiente de trabalho digital.
+\end{itemize}
+\textbf{Perfil social:}
+\begin{itemize}
+\item Responsável, metódico e com espírito crítico.
+\item Interesse pela área do cinema e pela gestão de comunidades online.
+\end{itemize}
+\textbf{Literacia digital:}
+\begin{itemize}
+\item Elevada.
+\item Conhecimento técnico sobre sistemas de gestão de conteúdos e bases de dados.
+\item Capaz de analisar, aprovar ou rejeitar comentários de forma criteriosa.
+\end{itemize}
+\textbf{Objetivos principais no sistema:}
+\begin{itemize}
+\item Adicionar novos filmes à base de dados.
+\item Rever e aprovar comentários submetidos pelos cinéfilos.
+\item Assegurar que o conteúdo publicado cumpre as regras e mantém um padrão de qualidade.
+\end{itemize}
+\subsection{Personas}
+\textbf{Persona: João Pereira – O Cinéfilo Entusiasta}
+\begin{itemize}
+\item Idade: 28 anos
+\item Profissão: Designer gráfico
+\item Hobbies: Ver filmes, discutir cinema em fóruns e redes sociais
+\item Motivação: Quer descobrir novos filmes e partilhar opiniões com outros fãs de cinema.
+\item Frustração: Não gosta de sites confusos ou com informações desatualizadas.
+\item Frase típica: “Adoro partilhar o que achei de um filme e descobrir novas sugestões de outros utilizadores.”
+\end{itemize}
+\textbf{Persona: Marta Rodrigues – A Administradora Criteriosa}
+\begin{itemize}
+    \item Idade: 34 anos
+    \item Profissão: Gestora de Conteúdos
+    \item Hobbies: Ver séries e gerir páginas de redes sociais
+    \item Motivação: Garantir que a aplicação mantém uma comunidade saudável e uma base de dados fiável.
+    \item Frustração: Comentários ofensivos ou spam que prejudicam a experiência dos utilizadores.
+    \item Frase típica: “Quero que a aplicação seja um espaço de partilha saudável e organizado.”
+\end{itemize}
+\newpage
+
+
 \section{Diagrama de casos de Uso}
+Os diagramas de caso de uso mostram as principais funcionalidades do sistema e como os utilizadores (atores) interagem com elas. Cada oval representa uma funcionalidade, enquanto os bonecos indicam os diferentes tipos de utilizadores. Este diagrama ajuda a entender de forma simples e visual o que o sistema deve fazer sem entrar nos detalhes técnicos.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{"figuras/Casos de Uso/Diagrama de Casos de Uso.png"}
+    \caption{Diagrama de Casos de Uso}
+    \label{fig:casosDeUso}
+\end{figure}
+\newpage
+
+\subsection{UC1 - Pesquisar Filmes }
+Este caso de uso permite que os utilizadores pesquisem filmes na base de dados utilizando diferentes critérios, como título, género ou ano de lançamento. Os resultados da pesquisa são apresentados numa lista, com informações básicas sobre cada filme.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{"figuras/Casos de Uso/UC1_Pesquisar Filmes.png"}
+    \caption{UC1 - Pesquisar Filmes}
+    \label{fig:UC1}
+\end{figure}
+\newpage
+\subsection{UC2 - Comentar Filmes}
+Este caso de uso permite que os utilizadores registados escrevam comentários sobre os filmes que assistiram. Os comentários são submetidos para revisão e aprovação por um administrador antes de serem publicados na plataforma
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/Casos de Uso/UC2_Comentar Filmes.png}
+    \caption{UC2 - Comentar Filmes}
+    \label{fig:UC2}
+\end{figure}
+\newpage
+
+\subsection{UC3 - Aprovar Avaliações}
+Este caso de uso permite que os administradores revejam os comentários submetidos pelos utilizadores e decidam se os aprovam para publicação ou os rejeitam com base nas diretrizes da comunidade.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/Casos de Uso/UC3_Aprovar Avaliações.png}
+    \caption{UC3 - Aprovar Avaliações}
+    \label{fig:UC3}
+\end{figure}
+\newpage
+\subsection{UC4 - Adicionar Filme}
+Este caso de uso permite que os administradores registados adicionem novos filmes à base de dados, incluindo informações como título, género, ano de lançamento e uma breve sinopse.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/Casos de Uso/UC4_Adicionar Filme.png}
+    \caption{UC4 - Adicionar Filme}
+    \label{fig:UC4}
+\end{figure}
+\newpage
+\subsection{UC5 - Analisar Dados de Utilização}
+Este caso de uso permite que os administradores visualizem estatísticas sobre a utilização da aplicação, como o número de pesquisas realizadas, comentários aprovados e filmes adicionados.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/Casos de Uso/UC5_Analisar Dados de Utilização.png}
+    \caption{UC5 - Analisar Dados de Utilização}
+    \label{fig:UC5}
+\end{figure}

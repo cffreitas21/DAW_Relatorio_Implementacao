@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.10.2)  19 OCT 2025 22:04
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.10.2)  19 OCT 2025 23:58
  restricted system commands enabled.
  file:line:error style messages enabled.
 **01-main-document
@@ -2462,7 +2462,7 @@ Package hyperref Info: Link coloring OFF on input line 13.
 
 \openout6 = 01-main-document.out
  (./parte-inicial/capa.tex
-<logos/IPbeja_horizontal.png, id=78, 352.9185pt x 146.2263pt>
+<logos/IPbeja_horizontal.png, id=106, 352.9185pt x 146.2263pt>
 File: logos/IPbeja_horizontal.png Graphic file (type png)
 <use logos/IPbeja_horizontal.png>
 Package luatex.def Info: logos/IPbeja_horizontal.png  used on input line 6.
@@ -2481,7 +2481,7 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
 (Font)              scaled to size 24.0pt on input line 10.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 12.
-<logos/estig.png, id=79, 352.9185pt x 241.1409pt>
+<logos/estig.png, id=107, 352.9185pt x 241.1409pt>
 File: logos/estig.png Graphic file (type png)
 <use logos/estig.png>
 Package luatex.def Info: logos/estig.png  used on input line 46.
@@ -2497,65 +2497,133 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 _horizontal.png><./logos/estig.png>]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 16.
-) (./parte-inicial/resumo.tex
+)
 
 [2]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 25.0pt on input line 1.
+(Font)              scaled to size 25.0pt on input line 26.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 25.0pt on input line 1.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 4.
-Package microtype Info: Character `156' is missing
-(microtype)             in font `TU/EBGaramond(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-)
-
-[3
-
-] (./01-main-document.toc
+(Font)              scaled to size 25.0pt on input line 26.
+ (./01-main-document.toc
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/sc' will be
 (Font)              scaled to size 12.0pt on input line 2.
 )
 
-[4
+[3
 
 
 ] (./01-main-document.lof)
 
-[5
+[4
 
 
 ] (./01-main-document.lot) (./capitulos/capitulo1-introducao.tex
 
-[6
+[5
 
 
 ]) (./capitulos/capitulo2.tex
 
+[6
+
+]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 4.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
+(Font)              scaled to size 20.74pt on input line 4.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 7.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
+(Font)              scaled to size 17.28pt on input line 7.
+
+
 [7
 
 ]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 4.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 20.74pt on input line 4.
-) (./capitulos/capitulo3.tex
 
-[8
+Package babel Info: 'portuguese' activates 'portuges' shorthands.
+(babel)             Reported on input line 40.
+[8]
 
-]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 5.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 17.28pt on input line 5.
-) (./capitulos/capitulo4.tex
+[9]
 
-[9
+[10]
+<figuras/Casos de Uso/Diagrama de Casos de Uso.png, id=186, 522.45187pt x 466.7
+4374pt>
+File: figuras/Casos de Uso/Diagrama de Casos de Uso.png Graphic file (type png)
+
+<use figuras/Casos de Uso/Diagrama de Casos de Uso.png>
+Package luatex.def Info: figuras/Casos de Uso/Diagrama de Casos de Uso.png  use
+d on input line 98.
+(luatex.def)             Requested size: 341.43437pt x 305.03212pt.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 99.
+Package microtype Info: Character `156' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+
+
+[11<./figuras/Casos de Uso/Diagrama de Casos de Uso.png>]
+<figuras/Casos de Uso/UC1_Pesquisar Filmes.png, id=194, 445.665pt x 438.13687pt
+>
+File: figuras/Casos de Uso/UC1_Pesquisar Filmes.png Graphic file (type png)
+<use figuras/Casos de Uso/UC1_Pesquisar Filmes.png>
+Package luatex.def Info: figuras/Casos de Uso/UC1_Pesquisar Filmes.png  used on
+ input line 109.
+(luatex.def)             Requested size: 298.75264pt x 293.71062pt.
+
+
+[12<./figuras/Casos de Uso/UC1_Pesquisar Filmes.png>]
+<figuras/Casos de Uso/UC2_Comentar Filmes.png, id=200, 442.65375pt x 431.36156p
+t>
+File: figuras/Casos de Uso/UC2_Comentar Filmes.png Graphic file (type png)
+<use figuras/Casos de Uso/UC2_Comentar Filmes.png>
+Package luatex.def Info: figuras/Casos de Uso/UC2_Comentar Filmes.png  used on 
+input line 118.
+(luatex.def)             Requested size: 298.75264pt x 291.14333pt.
+
+
+[13<./figuras/Casos de Uso/UC2_Comentar Filmes.png>]
+<figuras/Casos de Uso/UC3_Aprovar Avaliações.png, id=206, 444.91219pt x 499.1
+1469pt>
+File: figuras/Casos de Uso/UC3_Aprovar Avaliações.png Graphic file (type png)
+
+<use figuras/Casos de Uso/UC3_Aprovar Avaliações.png>
+Package luatex.def Info: figuras/Casos de Uso/UC3_Aprovar Avaliações.png  use
+d on input line 128.
+(luatex.def)             Requested size: 298.75264pt x 335.15144pt.
+
+
+[14<./figuras/Casos de Uso/UC3_Aprovar Avaliações.png>]
+<figuras/Casos de Uso/UC4_Adicionar Filme.png, id=212, 447.17062pt x 437.38406p
+t>
+File: figuras/Casos de Uso/UC4_Adicionar Filme.png Graphic file (type png)
+<use figuras/Casos de Uso/UC4_Adicionar Filme.png>
+Package luatex.def Info: figuras/Casos de Uso/UC4_Adicionar Filme.png  used on 
+input line 137.
+(luatex.def)             Requested size: 298.75264pt x 292.21822pt.
+
+
+[15<./figuras/Casos de Uso/UC4_Adicionar Filme.png>]
+<figuras/Casos de Uso/UC5_Analisar Dados de Utilização.png, id=218, 446.41782
+pt x 377.91188pt>
+File: figuras/Casos de Uso/UC5_Analisar Dados de Utilização.png Graphic file 
+(type png)
+<use figuras/Casos de Uso/UC5_Analisar Dados de Utilização.png>
+Package luatex.def Info: figuras/Casos de Uso/UC5_Analisar Dados de Utilizaç
+ão.png  used on input line 146.
+(luatex.def)             Requested size: 298.75264pt x 252.91132pt.
+)
+(./capitulos/capitulo3.tex
+
+[16<./figuras/Casos de Uso/UC5_Analisar Dados de Utilização.png>])
+(./capitulos/capitulo4.tex
+
+[17
 
 ])
 
-[10
+[18
 
 ]
 
@@ -2568,7 +2636,7 @@ Package microtype Info: Character `156' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-[11
+[19
 
 ]
 \tf@toc=\write7
@@ -2586,33 +2654,33 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `01-main-document.out' has not changed.
-(rerunfilecheck)             Checksum: 1C18B34FE711E6F24AA6B8C8629E2644;3131.
+(rerunfilecheck)             Checksum: 5DAC2E52F1F075358DF445962247E230;4381.
 Package logreq Info: Writing requests to '01-main-document.run.xml'.
 
 \openout1 = 01-main-document.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 51388 strings out of 476291
+ 51485 strings out of 476291
  125061,2373549 words of node,token memory allocated
- 1390 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 4 glyph, 25 attribute, 200 glue_spec, 14 attribute_list, 3 write, 2 pdf_acti
+ 1388 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 1 margin_ke
+rn, 4 glyph, 25 attribute, 201 glue_spec, 14 attribute_list, 3 write, 2 pdf_acti
 on nodes
-   avail lists: 1:3,2:671,3:230,4:35,5:195,6:48,7:1689,8:123,9:311,10:13,11:108
- 72563 multiletter control sequences out of 65536+600000
- 72 fonts using 28265351 bytes
+   avail lists: 1:4,2:626,3:230,4:99,5:233,6:50,7:3477,8:123,9:297,10:13,11:463
+ 72627 multiletter control sequences out of 65536+600000
+ 72 fonts using 28265591 bytes
  131i,11n,128p,1204b,2896s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramond/E
-BGaramond-Bold.otf><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentype/
-public/ebgaramond/EBGaramond-Italic.otf><C:/Users/angel/AppData/Local/Programs/M
+BGaramond-Italic.otf><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentyp
+e/public/ebgaramond/EBGaramond-Bold.otf><C:/Users/angel/AppData/Local/Programs/M
 iKTeX/fonts/opentype/public/ebgaramond/EBGaramond-Regular.otf><C:/Users/angel/Ap
 pData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf
 ><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramond/
 EBGaramond-Regular.otf>
-Output written on 01-main-document.pdf (11 pages, 129345 bytes).
+Output written on 01-main-document.pdf (19 pages, 288089 bytes).
 
-PDF statistics: 186 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 131072)
- 160 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 278 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 131072)
+ 216 words of extra memory for PDF output out of 10000 (max. 100000000)
 
