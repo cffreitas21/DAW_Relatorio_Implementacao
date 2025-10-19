@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.10.2)  19 OCT 2025 21:58
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.10.2)  19 OCT 2025 22:04
  restricted system commands enabled.
  file:line:error style messages enabled.
 **01-main-document
@@ -2287,9 +2287,12 @@ Package csquotes Info: Redefining alias 'default' -> 'portuguese'.
 LaTeX Warning: Unused global option(s):
     [alphabetic].
 
-No file 01-main-document.aux.
-
+(./01-main-document.aux
+Package babel Info: 'portuguese' activates 'portuges' shorthands.
+(babel)             Reported on input line 10.
+)
 \openout1 = 01-main-document.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
@@ -2310,6 +2313,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -2452,14 +2456,13 @@ No file 01-main-document.bbl.
 Package biblatex Info: Reference section=0 on input line 13.
 Package biblatex Info: Reference segment=0 on input line 13.
 \c@lstlisting=\count583
-Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 13.
 Package hyperref Info: Link coloring OFF on input line 13.
+(./01-main-document.out) (./01-main-document.out)
 \@outlinefile=\write6
 
 \openout6 = 01-main-document.out
-(./parte-inicial/capa.tex
-<logos/IPbeja_horizontal.png, id=6, 352.9185pt x 146.2263pt>
+ (./parte-inicial/capa.tex
+<logos/IPbeja_horizontal.png, id=78, 352.9185pt x 146.2263pt>
 File: logos/IPbeja_horizontal.png Graphic file (type png)
 <use logos/IPbeja_horizontal.png>
 Package luatex.def Info: logos/IPbeja_horizontal.png  used on input line 6.
@@ -2478,14 +2481,15 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
 (Font)              scaled to size 24.0pt on input line 10.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 12.
-<logos/estig.png, id=7, 352.9185pt x 241.1409pt>
+<logos/estig.png, id=79, 352.9185pt x 241.1409pt>
 File: logos/estig.png Graphic file (type png)
 <use logos/estig.png>
 Package luatex.def Info: logos/estig.png  used on input line 46.
 (luatex.def)             Requested size: 156.49014pt x 106.92653pt.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 48.
-) (./parte-inicial/folhaRosto.tex
+)
+(./parte-inicial/folhaRosto.tex
 
 [1
 
@@ -2509,23 +2513,20 @@ Package microtype Info: Character `156' is missing
 
 [3
 
-]
-No file 01-main-document.toc.
-
+] (./01-main-document.toc
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/sc' will be
+(Font)              scaled to size 12.0pt on input line 2.
+)
 
 [4
 
 
-]
-No file 01-main-document.lof.
-
+] (./01-main-document.lof)
 
 [5
 
 
-]
-No file 01-main-document.lot.
-(./capitulos/capitulo1-introducao.tex
+] (./01-main-document.lot) (./capitulos/capitulo1-introducao.tex
 
 [6
 
@@ -2548,433 +2549,28 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 5.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/sc' will be
 (Font)              scaled to size 17.28pt on input line 5.
+) (./capitulos/capitulo4.tex
 
-./capitulos/capitulo3.tex:9: Argument of \user@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+[9
 
-Runaway argument?
-./capitulos/capitulo3.tex:9: Paragraph ended before \user@active@arg" was comple
-te.
-<to be read again> 
-                   \par 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+])
 
-Runaway argument?
-do caso de uso "1
-./capitulos/capitulo3.tex:9: Paragraph ended before \HyPsd@@ProtectSpacesFi was 
-complete.
-<to be read again> 
-                   \par 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+[10
 
-./capitulos/capitulo3.tex:9: Use of \HyPsd@RemoveMask doesn't match its definiti
-on.
-\Hy@tempa ->\par 
-                 | 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-If you say, e.g., `\def\a1{...}', then you must always
-put `1' after `\a', since control sequence names are
-made up of letters only. The macro here has not been
-followed by the required stuff, so I'm ignoring it.
+]
 
-./capitulos/capitulo3.tex:9: Undefined control sequence.
-\HyPsd@ProtectSpaces ...d@RemoveMask #1\HyPsd@End 
-                                                  #1
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Empty bibliography on input line 52.
 
-Runaway argument?
-{
-./capitulos/capitulo3.tex:9: Paragraph ended before \HyPsd@RemoveBraces was comp
-lete.
-<to be read again> 
-                   \par 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-./capitulos/capitulo3.tex:9: Extra }, or forgotten \endgroup.
-\pdfstringdef ...d@RemoveBraces \expandafter {#1|}
-                                                  \global \let #1\HyPsd@Stri...
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./capitulos/capitulo3.tex:9: Argument of \HyPsd@CheckCatcodes has an extra }.
-<inserted text> 
-                \par 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-\global \let \Hy@tempa \HyPsd@String 
-./capitulos/capitulo3.tex:9: Paragraph ended before \HyPsd@CheckCatcodes was com
-plete.
-<to be read again> 
-                   \par 
-l.9 \subsection{Interfaces do caso de uso "1"}
-                                              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-\@empty \HyPsd@End \Hy@tempa \expandafter \HyPsd@Subst \expandafter {\ETC.
-./capitulos/capitulo3.tex:12: Paragraph ended before \HyPsd@RemoveMask was compl
-ete.
-<to be read again> 
-                   \par 
-l.12 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-)
-
-./01-main-document.tex:47: Missing { inserted.
-<to be read again> 
-                   #
-l.47 \clearpage
-               
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-If you're confused by all this, try typing `I}' now.
-
-./01-main-document.tex:47: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:47: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./01-main-document.tex:47: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:47: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./01-main-document.tex:47: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:47: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 71.
+Package microtype Info: Character `156' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/it/8'.
+(microtype)             Ignoring protrusion settings for this character.
 
 
-Class memoir Warning: The material used in the headers is too large
-(21.74998pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 47.
+[11
 
-./01-main-document.tex:47: Missing { inserted.
-<to be read again> 
-                   #
-l.47 \clearpage
-               
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-If you're confused by all this, try typing `I}' now.
-
-./01-main-document.tex:47: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:47: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./01-main-document.tex:47: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:47: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./01-main-document.tex:47: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:47: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.47 \clearpage
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \vbox (703.94934pt too high) has occurred while \output is active []
-
-
-[10]
-./01-main-document.tex:56: Argument of \printchaptertitle has an extra }.
-<inserted text> 
-                \par 
-l.56 \apendices
-               
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-./01-main-document.tex:56: Paragraph ended before \printchaptertitle was complet
-e.
-<to be read again> 
-                   \par 
-l.56 \apendices
-               
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-./01-main-document.tex:56: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.56 \apendices
-               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:56: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.56 \apendices
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./01-main-document.tex:56: You can't use `macro parameter character #' in horizo
-ntal mode.
-\chs@ipbejaappendixstyle ...ep }{\chaptitlefont ##
-                                                  1\par }\end {center} \vfil...
-l.56 \apendices
-               
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-./01-main-document.tex:56: LaTeX Error: Something's wrong--perhaps a missing \i
-tem.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \apendices
-               
-Try typing \space <return> \space to proceed.
-If that doesn't work, type \space X <return> \space to quit.
-
-./01-main-document.tex:61: Argument of \printchaptertitle has an extra }.
-<inserted text> 
-                \par 
-l.61 \anexos
-            
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-./01-main-document.tex:61: Paragraph ended before \printchaptertitle was complet
-e.
-<to be read again> 
-                   \par 
-l.61 \anexos
-            
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-./01-main-document.tex:61: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.61 \anexos
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./01-main-document.tex:61: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.61 \anexos
-            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./01-main-document.tex:61: You can't use `macro parameter character #' in horizo
-ntal mode.
-\chs@ipbejaappendixstyle ...ep }{\chaptitlefont ##
-                                                  1\par }\end {center} \vfil...
-l.61 \anexos
-            
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-./01-main-document.tex:61: LaTeX Error: Something's wrong--perhaps a missing \i
-tem.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 \anexos
-            
-Try typing \space <return> \space to proceed.
-If that doesn't work, type \space X <return> \space to quit.
-
-./01-main-document.tex:72: Extra }, or forgotten \endgroup.
-l.72 ...João Paulo Barros, joao.barros@ipbeja.pt}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Class memoir Warning: The material used in the headers is too large
-(21.74998pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 52.
-
+]
 \tf@toc=\write7
 
 \openout7 = 01-main-document.toc
@@ -2984,30 +2580,39 @@ either increase the head height or redesign the header
 \tf@lot=\write9
 
 \openout9 = 01-main-document.lot
-(./01-main-document.aux
-./01-main-document.aux:2: Argument of \memsetcounter has an extra }.
-<inserted text> 
-                \par 
-l.2 \providecommand*{\memsetcounter}
-                                    [2]{}
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+ (./01-main-document.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+Package rerunfilecheck Info: File `01-main-document.out' has not changed.
+(rerunfilecheck)             Checksum: 1C18B34FE711E6F24AA6B8C8629E2644;3131.
+Package logreq Info: Writing requests to '01-main-document.run.xml'.
 
-Runaway argument?
-./01-main-document.aux:2: Paragraph ended before \memsetcounter was complete.
-<to be read again> 
-                   \par 
-l.2 \providecommand*{\memsetcounter}
-                                    [2]{}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+\openout1 = 01-main-document.run.xml
+)
 
-./01-main-document.aux:4: error:  (nodes): there is a problem in getting a node,
- case 3
-./01-main-document.aux:4:  ==> Fatal error occurred, no output PDF file produced
-!
+Here is how much of LuaTeX's memory you used:
+ 51388 strings out of 476291
+ 125061,2373549 words of node,token memory allocated
+ 1390 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 1 margin_ke
+rn, 4 glyph, 25 attribute, 200 glue_spec, 14 attribute_list, 3 write, 2 pdf_acti
+on nodes
+   avail lists: 1:3,2:671,3:230,4:35,5:195,6:48,7:1689,8:123,9:311,10:13,11:108
+ 72563 multiletter control sequences out of 65536+600000
+ 72 fonts using 28265351 bytes
+ 131i,11n,128p,1204b,2896s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramond/E
+BGaramond-Bold.otf><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentype/
+public/ebgaramond/EBGaramond-Italic.otf><C:/Users/angel/AppData/Local/Programs/M
+iKTeX/fonts/opentype/public/ebgaramond/EBGaramond-Regular.otf><C:/Users/angel/Ap
+pData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf
+><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramond/
+EBGaramond-Regular.otf>
+Output written on 01-main-document.pdf (11 pages, 129345 bytes).
+
+PDF statistics: 186 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 131072)
+ 160 words of extra memory for PDF output out of 10000 (max. 100000000)
+
