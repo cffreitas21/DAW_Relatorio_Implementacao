@@ -28,7 +28,7 @@ das sessões.
 \end{figure}
 
 \begin{table}[H]
-    \begin{tabular}{|l|c|p{6cm}|}
+    \begin{tabular}{|l|c|p{5cm}|}
         \hline
         \textbf{Relação} & \textbf{Tipo} & \textbf{Descrição} \\
         \hline
@@ -41,18 +41,125 @@ das sessões.
     \end{tabular}
     \centering
     \caption{Relações do Diagrama Entidade-Relação}
-    \label{tab:relacoes entidades}
+    \label{tab:relacoes_entidades}
 \end{table}
 
 
 \subsection{Modelo Lógico Relacional}
+No seguinte modelo lógico relacional é possível verificar as tabelas da base de dados, os respetivos atributos e respetivos tipos de dados 
+bem como a chave primária de cada tabela.
+
+De seguida, são também apresentadas tabelas com toda a lógica, incluindo as chaves estrangeiras associadas a cada tabela.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/Base de Dados/ER_Lógico.png}
+    \includegraphics[width=1\textwidth]{figuras/Base de Dados/ER_Lógico.png}
     \caption{Modelo Lógico Relacional}
     \label{fig:MLR}
 \end{figure}
+
+
+\begin{table}[H]
+    \begin{tabular}{|l|c|p{5cm}|}
+        \hline
+        \textbf{Campo} & \textbf{Tipo de Dados} & \textbf{Restrições} \\
+        \hline
+        id\_utilizador & INT & PRIMARY KEY, AUTO\_INCREMENT \\
+        \hline
+        nome & VARCHAR(100) & NOT NULL \\
+        \hline
+        email & VARCHAR(100) & UNIQUE, NOT NULL \\
+        \hline
+        password & VARCHAR(255) & NOT NULL \\
+        \hline
+        tipo\_utilizador & ENUM('cinefilo', 'administrador') & NOT NULL \\
+        \hline
+    \end{tabular}
+    \centering
+    \caption{Estrutura da Tabela de Utilizador}
+    \label{tab:tabela_utilizador}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|c|p{5cm}|}
+        \hline
+        \textbf{Campo} & \textbf{Tipo de Dados} & \textbf{Restrições} \\
+        \hline
+        id\_filme & INT & PRIMARY KEY, AUTO\_INCREMENT \\
+        \hline
+        titulo & VARCHAR(150) & NOT NULL \\
+        \hline
+        imagem\_capa & VARCHAR(255) & NULL \\
+        \hline
+        ano\_lancamento & INT & NOT NULL \\
+        \hline
+        idioma & VARCHAR(50) & NOT NULL \\
+        \hline
+        genero & VARCHAR(50) & NOT NULL \\
+        \hline
+        rating & DOUBLE & NOT NULL \\
+        \hline
+        sinopse & TEXT & NOT NULL \\
+        \hline
+    \end{tabular}
+    \centering
+    \caption{Estrutura da Tabela de Filme}
+    \label{tab:tabela_filme}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|c|p{5cm}|}
+        \hline
+        \textbf{Campo} & \textbf{Tipo de Dados} & \textbf{Restrições} \\
+        \hline
+        id\_comentario & INT & PRIMARY KEY, AUTO\_INCREMENT \\
+        \hline
+        id\_utilizador & INT & FOREIGN KEY → Utilizador(id\_utilizador) \\
+        \hline
+        id\_filme & INT & FOREIGN KEY → Filme(id\_filme) \\
+        \hline
+        texto & TEXT & NOT NULL \\
+        \hline
+        data\_comentario & DATETIME & DEFAULT CURRENT\_TIMESTAMP \\
+        \hline
+        estado & ENUM('pendente', 'aprovado', 'rejeitado') & DEFAULT 'pendente' \\
+        \hline
+    \end{tabular}
+    \centering
+    \caption{Estrutura da Tabela de Comentário}
+    \label{tab:tabela_comentario}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|c|p{5cm}|}
+        \hline
+        \textbf{Campo} & \textbf{Tipo de Dados} & \textbf{Restrições} \\
+        \hline
+        id\_analise & INT & PRIMARY KEY, AUTO\_INCREMENT \\
+        \hline
+        id\_utilizador & INT & FOREIGN KEY → Utilizador(id\_utilizador) \\
+        \hline
+        numero\_sessoes & INT & NOT NULL DEFAULT 0 \\
+        \hline
+        tempo\_sessao & INT & NOT NULL DEFAULT 0 \\
+        \hline
+        cliques & INT & NOT NULL DEFAULT 0 \\
+        \hline
+        pesquisas & INT & NOT NULL DEFAULT 0 \\
+        \hline
+        comentarios\_sessao & INT & NOT NULL DEFAULT 0 \\
+        \hline
+        comentarios\_total & INT & NOT NULL DEFAULT 0 \\
+        \hline
+        data\_registo & DATETIME& NOT NULL DEFAULT CURRENT\_TIMESTAMP \\
+        \hline
+    \end{tabular}
+    \centering
+    \caption{Estrutura da Tabela de Dados de Utilização}
+    \label{tab:tabela_dados}
+\end{table}
+
+
 
 \section{Modelação de Interfaces Gráficas com o utilizador}
 
