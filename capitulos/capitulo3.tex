@@ -1,10 +1,24 @@
 \chapter{Desenho do Sistema}
 \label{cap3}
 
+Neste capitulo é apresentada a descrição do modelo de base de dados que irá suportar o sistema. 
+Primeiro, é exposto o modelo Entidade/Relação com todas as entidades e a relação entre elas. 
+Em seguida, é apresentado o modelo lógico relacional da base de dados, com a estrutura normalizada composta pelas tabelas, 
+chaves primárias e estrangeiras e o tipo de dados associados a cada atributo.
+
+Na segunda parte deste capítulo, são expostas as interfaces graficas de média fidelidade associadas a cada caso de uso bem como um 
+storyboard de baixa fidelidade que ajudará a compreender, numa primeira fase, o funcionamento da aplicação.
+
+\clearpage
 \section{Modelação da Base de Dados}
 
-
 \subsection{Diagrama de Entidade Relação}
+
+No seguinte diagrama de Entidade/Relação conseguem-se observar as entidades associadas aos utilizadores(atores),
+as entidade relacionadas com os filmes e os respetivos comentários. Podemos observar também que os utilizadores
+geram dados de utilização da aplicação, onde iremos conseguir observar o comportamento de cada utilizador ao longo 
+das sessões.
+
 
 \begin{figure}[H]
     \centering
@@ -12,6 +26,24 @@
     \caption{Diagrama de Entidade Relação}
     \label{fig:ER}
 \end{figure}
+
+\begin{table}[H]
+    \begin{tabular}{|l|c|p{6cm}|}
+        \hline
+        \textbf{Relação} & \textbf{Tipo} & \textbf{Descrição} \\
+        \hline
+        utilizador (1) — comentario (N) & 1:N & Um utilizador pode escrever vários comentários. \\
+        \hline
+        filme (1) — comentario (N) & 1:N & Um filme pode ter vários comentários. \\
+        \hline
+        utilizador (1) — analiseUtilizacao (N) & 1:N & Um utilizador pode gerar múltiplos dados de utilização. \\
+        \hline
+    \end{tabular}
+    \centering
+    \caption{Relações do Diagrama Entidade-Relação}
+    \label{tab:relacoes entidades}
+\end{table}
+
 
 \subsection{Modelo Lógico Relacional}
 
