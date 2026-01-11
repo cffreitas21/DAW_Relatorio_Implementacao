@@ -15,7 +15,8 @@ sistema StreamBoltTV onde se demonstram claramente os blocos de SW e HW que comp
 
 \section{Tecnologias Usadas}
 
-O projeto StreamBoltTV utiliza diversas tecnologias de suporte ao desenvolvimento, incluindo linguagens de programação, frameworks, bases de dados e ferramentas de build.
+O projeto StreamBoltTV utiliza diversas tecnologias de suporte ao desenvolvimento,
+ incluindo linguagens de programação, frameworks, bases de dados e ferramentas de build.
 
 \subsection{Linguagens de Programação}
 
@@ -37,7 +38,7 @@ O projeto StreamBoltTV utiliza diversas tecnologias de suporte ao desenvolviment
     
     \url{https://laravel.com/docs/12.x}
     
-    \item \textbf{Tailwind CSS 3.1.0}: Estilização e design responsivo do frontend. 
+    \item \textbf{Tailwind CSS 3.1.0}: Estilos e design responsivo do frontend. 
     
     \url{https://tailwindcss.com/docs}
     
@@ -142,3 +143,122 @@ A tabela a seguir apresenta os endpoints da API REST do StreamBoltTV.
     \item Ao apagar filme, os comentários associados são apagados automaticamente.
     \item Ao apagar filme, o poster é removido do storage.
 \end{itemize}
+
+\subsection{Decisões de Implementação da API}
+
+\subsubsection{Abordagem Code-First com Migrations}
+
+O projeto adota a abordagem \textbf{code-first} usando migrations do Laravel, em vez de criar a base de dados manualmente (database-first).  
+
+Esta abordagem tem várias vantagens:
+
+\begin{itemize}
+    \item \textbf{Versionamento integrado:} A estrutura da base de dados evolui junto com o código, permitindo tracking e rollback de alterações.
+    \item \textbf{Portabilidade:} O schema é independente do SGBD, facilitando migrações entre MySQL, PostgreSQL ou outros suportados pelo Laravel.
+    \item \textbf{Reversibilidade:} Cada migration possui métodos para criar (\texttt{up()}) e desfazer (\texttt{down()}) alterações.
+    \item \textbf{Desenvolvimento iterativo:} Facilita alterações incrementais, como adicionar campos ou modificar relações, sem comprometer dados existentes.
+\end{itemize}
+
+\clearpage
+\subsubsection{Arquitetura RESTful}
+
+A API segue rigorosamente padrões REST:
+
+\begin{itemize}
+    \item Recursos representados por URLs no plural (\texttt{/movies}, \texttt{/comments}).
+    \item Métodos HTTP semânticos (GET, POST, DELETE) e respostas em JSON.
+    \item Separação clara entre rotas da API (\texttt{routes/api.php}) e rotas web (\texttt{routes/web.php}).
+\end{itemize}
+
+\subsubsection{Design de Controladores}
+
+Controladores organizados por namespace (\texttt{App/Http/Controllers/Api}) e seguindo métodos RESTful padrão:
+
+\texttt{index()}, \texttt{show()}, \texttt{store()}, \texttt{update()}, \texttt{destroy()}, entre outros.
+
+\subsubsection{Segurança do Sistema}
+
+\begin{itemize}
+    \item Autenticação via Laravel Sanctum (tokens para SPAs).
+    \item Autorização via middleware de roles (admin / streamer).
+\end{itemize}
+
+\clearpage
+\subsection{Principais casos relevantes de programação}
+
+O desenvolvimento do sistema envolveu casos de programação que combinam 
+segurança, lógica de negócio e interatividade no frontend. 
+Nesta secção são apresentados alguns casos acompanhados de pequenos trechos de código.
+
+\paragraph{1. Autenticação e controlo de acesso por role:}
+
+Para garantir que apenas utilizadores autorizados executam operações críticas
+ (criação e remoção de filmes, aprovação de comentários), foi implementado 
+ um sistema de controlo de acesso baseado em roles (administrador ou cinéfilo), 
+ utilizando middleware.
+
+
+\begin{itemize}
+    \item \textbf{Middleware de verificação de administrador:}
+\begin{lstlisting}[language=php]
+if (!auth()->check() || !auth()->user()->isAdmin()) {
+    abort(403, 'Access denied.');
+}
+\end{lstlisting}
+
+    \item \textbf{Métodos helper no model User:}
+\begin{lstlisting}[language=php]
+public function isAdmin(): bool {
+    return $this->role === 'admin';
+}
+
+public function isStreamer(): bool {
+    return $this->role === 'streamer';
+}
+\end{lstlisting}
+
+    \item \textbf{Aplicação do middleware nas rotas:}
+\begin{lstlisting}[language=php]
+Route::middleware(['auth','admin'])->group(function () {
+    Route::post('/movies', [MovieController::class, 'store']);
+    Route::delete('/movies/{id}', [MovieController::class, 'destroy']);
+});
+\end{lstlisting}
+\end{itemize}
+
+\noindent Esta abordagem garante segurança em camadas, reutilização de código e uma separação clara de responsabilidades.
+
+\paragraph{2. Filtragem dinâmica de filmes na homepage do streamer:}
+
+A homepage do streamer permite filtrar filmes por género e ano sem recarregar a página, 
+utilizando JavaScript e a API REST.
+
+\begin{itemize}
+    \item \textbf{Carregamento inicial dos filmes via API:}
+\begin{lstlisting}[language=Java]
+allMovies = await fetch('/api/movies')
+    .then(response => response.json());
+renderMovies(allMovies);
+\end{lstlisting}
+
+    \item \textbf{Aplicação de filtros cumulativos:}
+\begin{lstlisting}[language=Java]
+filteredMovies = allMovies
+    .filter(m => !genre || m.genre === genre)
+    .filter(m => !year || 
+        new Date(m.release_date).getFullYear() == year);
+
+renderMovies(filteredMovies);
+\end{lstlisting}
+
+    \item \textbf{Reposição dos filtros:}
+\begin{lstlisting}[language=Java]
+genreFilter.value = '';
+yearFilter.value = '';
+renderMovies(allMovies);
+\end{lstlisting}
+\end{itemize}
+
+\noindent Esta solução melhora significativamente a performance e a experiência do utilizador, evitando múltiplas requisições ao servidor e mantendo a lógica de filtragem simples e eficiente.
+
+
