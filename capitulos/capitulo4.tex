@@ -1,2 +1,28 @@
-\chapter{Melhorias da Fase de Análise e Desenho}
+\chapter{Melhorias efetuadas na análise e desenho do sistema}
 \label{cap4}
+
+\clearpage
+Foram introduzidas melhorias com o objetivo 
+de aumentar a funcionalidade e a qualidade do sistema. Foi implementado um mecanismo de filtragem de filmes por categoria na página inicial 
+de filmes ma homepage do cinéfilo, permitindo filtrar os filmes por género.
+
+Para suportar esta funcionalidade, foi criada uma nova tabela na base de dados para os géneros,
+promovendo uma melhor normalização do modelo de dados e facilitando a manutenção
+e expansão futura do sistema. 
+
+Adicionalmente, a componente de análise de utilização da aplicação deixou de estar 
+representada no modelo relacional, uma vez que as métricas de utilização são 
+calculadas dinamicamente ao nível da aplicação, com base nos dados registados, 
+sendo processadas exclusivamente no backend Laravel.
+
+O modelo lógico relacional atualizado, incluindo a nova 
+tabela de géneros e as respetivas relações com a entidade de filmes, encontra-se 
+representado na figura seguinte.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figuras/Base de Dados/ER_Logico_melhoria.png}
+    \caption{Diagrama de Entidade Relação Melhorado}
+    \label{fig:ERM}
+\end{figure}

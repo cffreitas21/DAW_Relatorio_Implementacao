@@ -1,0 +1,123 @@
+\chapter{Implementação}
+\label{cap5}
+
+\clearpage
+\section{Arquitetura do Sistema}
+Na seguinte figura podemos observar o diagrama de implantação do 
+sistema StreamBoltTV onde se demonstram claramente os blocos de SW e HW que compõem o sistema.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Base de Dados/Diagrama_Implantacao.png}
+    \caption{Diagrama de Implantação}
+    \label{fig:DI}
+\end{figure}
+
+\section{Tecnologias Usadas}
+
+O projeto StreamBoltTV utiliza diversas tecnologias de suporte ao desenvolvimento, incluindo linguagens de programação, frameworks, bases de dados e ferramentas de build.
+
+\subsection{Linguagens de Programação}
+
+\begin{itemize}
+    \item \textbf{PHP 8.2.12}: Lógica de negócio, processamento de dados e interação com base de dados. 
+    
+    \url{https://www.php.net/}
+    
+    \item \textbf{JavaScript (ES6+)}: Interatividade no frontend e requisições assíncronas. 
+    
+    \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript}
+\end{itemize}
+
+\subsection{Frameworks Principais}
+
+\begin{itemize}
+    
+    \item \textbf{Laravel 12.45.2}: Estrutura MVC da aplicação, gestão de rotas, autenticação e ORM. 
+    
+    \url{https://laravel.com/docs/12.x}
+    
+    \item \textbf{Tailwind CSS 3.1.0}: Estilização e design responsivo do frontend. 
+    
+    \url{https://tailwindcss.com/docs}
+    
+    \item \textbf{Alpine.js 3.4.2}: Comportamento reativo leve no frontend.
+    
+    \url{https://alpinejs.dev/start-here}
+\end{itemize}
+
+\subsection{Base de Dados}
+
+\begin{itemize}
+    \item \textbf{MySQL / PostgreSQL}: Armazenamento persistente de dados. 
+    
+    \url{https://www.mysql.com/}, \url{https://www.postgresql.org/}
+    
+    \item \textbf{Eloquent ORM}: Abstração da base de dados e mapeamento objeto-relacional. 
+    
+    \url{https://laravel.com/docs/12.x/eloquent}
+\end{itemize}
+
+\subsection{Ferramentas de Build e Desenvolvimento}
+
+\begin{itemize}
+    
+    \item \textbf{Vite 7.0.7}: Compilação de assets e otimização do frontend.
+    
+    \url{https://vitejs.dev/guide/}
+    
+    \item \textbf{Composer}: Gestão de dependências PHP. 
+    
+    \url{https://getcomposer.org/doc/}
+    
+    \item \textbf{NPM}: Gestão de dependências JavaScript. 
+    
+    \url{https://docs.npmjs.com/}
+\end{itemize}
+
+\subsection{Servidor Web e Infraestrutura}
+
+\begin{itemize}
+    \item \textbf{Apache / Nginx}: Servidor web para processamento de requisições HTTP/HTTPS.
+    
+    \url{https://httpd.apache.org/}, \url{https://nginx.org/}
+\end{itemize}
+
+\subsection{Autenticação e Segurança}
+
+\begin{itemize}
+    \item \textbf{Laravel Sanctum 4.0}: Autenticação de API e SPA. 
+    
+    \url{https://laravel.com/docs/12.x/sanctum}
+    
+    \item \textbf{Laravel Breeze 2.3}: Login, registo e gestão de passwords. 
+    
+    \url{https://laravel.com/docs/12.x/starter-kits#laravel-breeze}
+\end{itemize}
+
+\subsection{Comunicação HTTP}
+
+\begin{itemize}
+    \item \textbf{Axios 1.11.0}: Requisições AJAX para API REST. 
+    
+    \url{https://axios-http.com/docs/intro}
+\end{itemize}
+
+\clearpage
+\subsection{Padrões Arquiteturais}
+
+\begin{itemize}
+    \item \textbf{MVC}: Organização do código em Models, Views e Controllers. 
+    
+    \url{https://laravel.com/docs/12.x/structure}
+    
+    \item \textbf{RESTful API}: Endpoints CRUD. 
+    
+    \url{https://laravel.com/docs/12.x/routing#api-routes}
+    
+    \item \textbf{Eloquent ORM}: Models representam tabelas e relações. 
+    
+    \url{https://laravel.com/docs/12.x/eloquent}
+\end{itemize}
+
+
