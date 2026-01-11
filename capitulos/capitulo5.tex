@@ -120,4 +120,25 @@ O projeto StreamBoltTV utiliza diversas tecnologias de suporte ao desenvolviment
     \url{https://laravel.com/docs/12.x/eloquent}
 \end{itemize}
 
+\clearpage
+\section{Desenvolvimento da API}
 
+\subsection{Especificação da interface}
+
+A tabela a seguir apresenta os endpoints da API REST do StreamBoltTV.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/Endpoints.png}
+    \caption{Endpoints da API}
+    \label{fig:ERM}
+\end{figure}
+
+\clearpage
+\noindent\textbf{Notas importantes:}
+\begin{itemize}
+    \item Todos os comentários criados começam como não aprovados.
+    \item Apenas administradores podem aprovar ou rejeitar comentários.
+    \item Ao apagar filme, os comentários associados são apagados automaticamente.
+    \item Ao apagar filme, o poster é removido do storage.
+\end{itemize}
